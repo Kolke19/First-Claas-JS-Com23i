@@ -84,13 +84,47 @@ let code = rolling;
 rolling = "code string";
 console.log("Respeusta definitiva", code);
 
-/*Objetos o compuestos o datos no primitivos*/
-let car = {
+/*Objetos o compuestos o datos no primitivos pueden ser valores en numeros, strings, bolean etc*/
+let corolla = {
   brand: " toyota",
   model: "corolla",
   year: 2015,
-  velMax: 200,
-  engine: 1.6,
-  wheels: 4,
-  isAuto: true,
 };
+let corolla2 = {
+  brand: " toyota",
+  model: "corolla",
+  year: 2015,
+};
+// IMPORTANTE Copian y almacenan por referencia.
+
+// Datos primitivos == creamos la variable == almacenamos con el valor de 'hola mundo' en la memoria del navegador. La memoria se la conoce como "memory heap"
+// Dato primitivo == creamos el objeto == se almacena en Call stack.
+
+// Comparación para comparar en la consola del navegador
+let text1 = "texto";
+let text2 = "texto";
+
+/* PREGUTNA DE ENTREVISTA: cual es la diferencia entre datos primitivos y no primitivos?
+ los datos primitivos se copian por valor en memoria y los datos no primitivos se copian por referencia en memoria.(La direccion donde esta ese objeto en el call stack)
+  */
+
+//  Array listas o vectores SE DECLARAN CON CORCHETES
+// let menuItems = ['pase sanitario' 'politica'];
+// let shoppingCart = [objeto1, objeto2, objeto3];
+
+// Funciones o metodos STRING
+let myStr = "HOLA MUNDO";
+console.log(
+  "MINUSCULAS===>",
+  myStr.toLowerCase()
+); /*FUNCIONES O METODOS SIEMPRE LLEVAN "()" */
+console.log(
+  "CANTIDAD DE CARACTERES ==>",
+  myStr.length
+); /*PROPIEDADES NO LLEVAN () */
+console.log("PRIMER CARACTER ==>", myStr.charAt(1));
+
+//
+console.log("PRIMER CARACTER ==>", myStr.charAt(myStr.length - 1));
+/* obtener la ultima letra de un string */
+console.log("QUIERO MOSTRAR SOLO LA PRIMER PALABRA", myStr.substring(0, 4));
