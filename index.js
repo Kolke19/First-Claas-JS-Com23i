@@ -85,3 +85,12 @@ rolling = "code string";
 console.log("Respeusta definitiva", code);
 
 /*Objetos o compuestos o datos no primitivos*/
+let car = {
+  brand: " toyota",
+  model: "corolla",
+  year: 2015,
+  velMax: 200,
+  engine: 1.6,
+  wheels: 4,
+  isAuto: true,
+};
